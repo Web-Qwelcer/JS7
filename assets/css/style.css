@@ -34,7 +34,7 @@ aside ul.places {
     cursor: pointer;
 }
 
-aside ul.places li:visited {
+aside ul.places li:visited, .hovered.active {
     color: #ff0000;
 }
 
@@ -42,9 +42,16 @@ aside ul.places li:visited {
     transition: .5s;
 }
 
-.hovered:hover {
-    transition: .5s;
-    margin-left: 20px;
+.hovered.hover {
+    margin-left: 10px;
+}
+
+.list__article {
+    display: none;
+}
+
+.list__article.visible {
+    display: block;
 }
 
 article img {
