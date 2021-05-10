@@ -1,0 +1,56 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h3, h4 {
+    text-transform: uppercase;
+}
+
+h3 {
+    text-align: center;
+    padding: 20px;
+}
+
+aside {
+    border: 1px solid #808080;
+    box-shadow: 00 5px 3px #808080;
+    padding: 10px;
+}
+
+aside ul.places {
+    list-style-type: none;
+    padding: 0px;
+}
+
+aside ul.places {
+    cursor: pointer;
+}
+
+aside ul.places li:visited {
+    color: #ff0000;
+}
+
+.hovered {
+    transition: .5s;
+}
+
+.hovered:hover {
+    transition: .5s;
+    margin-left: 20px;
+}
+
+article img {
+    width: 100%;
+}
+
+article:not(article:nth-child(1)) {
+    display: none;
+}
